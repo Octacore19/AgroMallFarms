@@ -1,0 +1,2 @@
+rootProject.name='AgroMall Farms'
+include ':app'
