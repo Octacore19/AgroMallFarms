@@ -8,10 +8,11 @@ import androidx.lifecycle.ViewModel
 import com.octacore.agromallfarms.Repository
 import com.octacore.agromallfarms.data.FarmersDatabase
 import com.octacore.agromallfarms.model.Farmer
+import com.octacore.agromallfarms.model.FarmerAndFarm
 
 class DashboardViewModel(app: Application) : AndroidViewModel(app) {
     private val repo: Repository
-    val farmers: LiveData<List<Farmer>>
+    val farmers: LiveData<List<FarmerAndFarm>>
 
     init {
         val farmerDao = FarmersDatabase.getDatabase(app).farmerDao()

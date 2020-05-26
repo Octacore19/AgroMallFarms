@@ -9,10 +9,9 @@ data class Farmer(
     @PrimaryKey(autoGenerate = true) val uid: Int,
     val firstName: String,
     val lastName: String,
-    val otherNames: String,
+    val otherNames: String?,
     val profilePhoto: String,
     val phoneNumber: String,
     val birthday: String,
-    val email: String,
-    @Embedded val farm: Farm
+    val email: String
 )

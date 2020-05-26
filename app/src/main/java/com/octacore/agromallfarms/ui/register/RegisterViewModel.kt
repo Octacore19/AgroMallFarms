@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.*
 import com.octacore.agromallfarms.Repository
 import com.octacore.agromallfarms.data.FarmersDatabase
+import com.octacore.agromallfarms.model.Farm
 import com.octacore.agromallfarms.model.Farmer
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -16,8 +17,8 @@ class RegisterViewModel(app: Application) : AndroidViewModel(app) {
         repo = Repository(farmerDao)
     }
 
-    fun registerFarmer(farmer: Farmer) = viewModelScope.launch(Dispatchers.IO) {
-        repo.insertFarmer(farmer)
+    fun registerFarmer(farmer: Farmer, farm: Farm) = viewModelScope.launch(Dispatchers.IO) {
+        repo.insertFarmerAndFarm(farmer, farm)
     }
 
     /*private val _text = MutableLiveData<String>().apply {
