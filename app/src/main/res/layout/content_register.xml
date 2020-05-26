@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_16dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/farmerProfilePhoto"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera"
+            app:riv_border_color="@color/colorAccent"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="50dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_48dp"
+            android:text="@string/personal_info"
+            android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:hint="@string/first_name"
+            app:startIconDrawable="@drawable/ic_face_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lastNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:hint="@string/last_name"
+            app:startIconDrawable="@drawable/ic_face_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otherNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:hint="@string/other_name"
+            app:startIconDrawable="@drawable/ic_face_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otherNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:hint="@string/email"
+            app:startIconDrawable="@drawable/ic_email_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:hint="@string/phoneNumber"
+            app:startIconDrawable="@drawable/ic_phone_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthdayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:hint="@string/birthday"
+            app:startIconDrawable="@drawable/ic_event_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthdayEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="datetime"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_48dp"
+            android:text="@string/farm_details"
+            android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/farmNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:hint="@string/farm_name"
+            app:startIconDrawable="@drawable/ic_event_note_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/farmNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/farmLocationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:hint="@string/location"
+            app:startIconDrawable="@drawable/ic_location_on_black_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/farmLocationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/latitudeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:hint="@string/latitude"
+                app:startIconDrawable="@drawable/ic_location_on_black_24dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/latitudeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/longitudeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:hint="@string/longitude"
+                app:startIconDrawable="@drawable/ic_location_on_black_24dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/longitudeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:layout_marginBottom="@dimen/dimen_48dp"
+            android:text="@string/register" />
+    </LinearLayout>
+</ScrollView>

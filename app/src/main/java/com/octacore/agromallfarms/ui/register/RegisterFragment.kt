@@ -17,9 +17,9 @@ class RegisterFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         registerViewModel = ViewModelProviders.of(this).get(RegisterViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_register, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
+//        val textView: TextView = root.findViewById(R.id.text_gallery)
         registerViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
+//            textView.text = it
         })
         return root
     }

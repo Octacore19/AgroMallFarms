@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/side_nav_bar"
-    android:gravity="bottom"
+    android:layout_height="@dimen/dimen_180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/constellation_background"
+    android:gravity="bottom|center_horizontal"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:padding="@dimen/dimen_16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/imageView"
+        android:id="@+id/farmerProfilePhoto"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera"
+        app:riv_border_color="@color/colorAccent"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="50dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/farmerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/nav_header_desc"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@mipmap/ic_launcher_round" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:paddingTop="@dimen/dimen_8dp"
         android:text="@string/nav_header_title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
 
-    <TextView
-        android:id="@+id/textView"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/farmerEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nav_header_subtitle" />
+        android:text="@string/nav_header_subtitle"
+        android:textAppearance="@style/AppTheme.TextAppearance.Caption" />
 
 </LinearLayout>

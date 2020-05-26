@@ -12,4 +12,19 @@
     <string name="menu_logout">@string/action_logout</string>
 
     <string name="home_second">Home Second</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="other_name">Other Names</string>
+    <string name="email">Email</string>
+    <string name="birthday">Birthday</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="farm_details">Farm Details</string>
+    <string name="farm_name">Farm Name</string>
+    <string name="location">Location</string>
+    <string name="maps_api_key" />
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="register">Register</string>
+    <string name="menu_map">Map</string>
 </resources>

@@ -9,7 +9,7 @@
         android:id="@+id/nav_dashboard"
         android:name="com.octacore.agromallfarms.ui.dashboard.DashboardFragment"
         android:label="@string/menu_dashboard"
-        tools:layout="@layout/fragment_home">
+        tools:layout="@layout/fragment_dashboard">
         <action
             android:id="@+id/action_nav_dashboard_to_nav_gallery"
             app:destination="@id/nav_register" />
