@@ -87,6 +87,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView2"
+        app:layout_constraintTop_toBottomOf="@+id/farmerCardView"
         tools:listitem="@layout/list_item_recycler" />
 </androidx.constraintlayout.widget.ConstraintLayout>
