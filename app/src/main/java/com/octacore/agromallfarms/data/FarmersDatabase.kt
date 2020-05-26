@@ -4,15 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.octacore.agromallfarms.data.dao.FarmDao
 import com.octacore.agromallfarms.data.dao.FarmerDao
 import com.octacore.agromallfarms.model.Farm
 import com.octacore.agromallfarms.model.Farmer
 
-@Database(entities = [Farmer::class, Farm::class], version = 1)
+@Database(entities = [Farmer::class], version = 1, exportSchema = false)
 abstract class FarmersDatabase : RoomDatabase() {
     abstract fun farmerDao(): FarmerDao
-    abstract fun farmDao(): FarmDao
 
     companion object {
         @Volatile
