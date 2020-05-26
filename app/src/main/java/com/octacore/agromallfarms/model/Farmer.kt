@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Farmer(
-    @PrimaryKey(autoGenerate = true) val uid: Int,
+    @PrimaryKey(autoGenerate = true) val farmerId: Long,
     val firstName: String,
     val lastName: String,
     val otherNames: String?,

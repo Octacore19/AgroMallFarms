@@ -13,7 +13,7 @@ import com.octacore.agromallfarms.model.FarmerAndFarm
 class FarmersListAdapter constructor(context: Context) :
     RecyclerView.Adapter<FarmersListAdapter.ViewHolder>() {
     private val inflater = LayoutInflater.from(context)
-    private var farmers = emptyList<FarmerAndFarm>()
+    private var farmersAndFarm = emptyList<FarmerAndFarm>()
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val idTextView: MaterialTextView = itemView.findViewById(R.id.farmerId)
@@ -26,17 +26,17 @@ class FarmersListAdapter constructor(context: Context) :
         return ViewHolder(itemView)
     }
 
-    override fun getItemCount() = farmers.size
+    override fun getItemCount() = farmersAndFarm.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val current = farmers[position]
-        holder.idTextView.text = current.farmer.uid.toString()
+        val current = farmersAndFarm[position]
+        holder.idTextView.text = current.farmer.farmerId.toString()
         holder.farmNameTextView.text = current.farm.name
         holder.farmerNameTextView.text = generateFarmerName(current.farmer)
     }
 
-    fun loadFarmers(farmers: List<FarmerAndFarm>) {
-        this.farmers = farmers
+    fun loadFarmersAndFarm(farmersAndFarm: List<FarmerAndFarm>) {
+        this.farmersAndFarm = farmersAndFarm
         notifyDataSetChanged()
     }
 

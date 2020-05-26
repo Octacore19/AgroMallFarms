@@ -17,6 +17,11 @@ class RegisterFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         registerViewModel = ViewModelProviders.of(this).get(RegisterViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_register, container, false)
+        initViews(root)
         return root
+    }
+
+    private fun initViews(root: View) {
+        TODO("Not yet implemented")
     }
 }

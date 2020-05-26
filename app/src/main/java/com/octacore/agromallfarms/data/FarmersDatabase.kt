@@ -8,7 +8,7 @@ import com.octacore.agromallfarms.data.dao.FarmerDao
 import com.octacore.agromallfarms.model.Farm
 import com.octacore.agromallfarms.model.Farmer
 
-@Database(entities = [Farmer::class], version = 1, exportSchema = false)
+@Database(entities = [Farmer::class, Farm::class], version = 1, exportSchema = false)
 abstract class FarmersDatabase : RoomDatabase() {
     abstract fun farmerDao(): FarmerDao
 

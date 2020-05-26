@@ -12,8 +12,14 @@ import com.octacore.agromallfarms.model.FarmerAndFarm
 @Dao
 interface FarmerDao {
     @Transaction
-    @Query("SELECT * FROM farmer")
+    @Query("SELECT * FROM farmer LIMIT 5")
     fun getAllFarmersAndTheirFarm(): LiveData<List<FarmerAndFarm>>
+
+    @Query("SELECT * FROM farmer")
+    fun getAllFarmers(): LiveData<List<Farmer>>
+
+    @Query("SELECT * FROM farm")
+    fun getAllFarms(): LiveData<List<Farm>>
 
     @Insert
     suspend fun insertFarmerAndFarm(farmer: Farmer, farm: Farm)

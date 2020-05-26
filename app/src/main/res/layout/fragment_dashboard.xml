@@ -25,14 +25,14 @@
             android:gravity="center_horizontal|bottom"
             android:orientation="vertical">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/farmerCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/AppTheme.TextAppearance.Headline1"
                 tools:text="2" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_8dp"
@@ -61,15 +61,14 @@
             android:padding="@dimen/dimen_8dp"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView"
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/farmCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/AppTheme.TextAppearance.Headline1"
                 tools:text="2" />
 
-            <TextView
-                android:id="@+id/textView2"
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_8dp"

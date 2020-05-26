@@ -6,7 +6,11 @@ import com.octacore.agromallfarms.model.Farmer
 
 class Repository(private val farmerDao: FarmerDao) {
 
-    val farmers = farmerDao.getAllFarmersAndTheirFarm()
+    val farmersAndFarm = farmerDao.getAllFarmersAndTheirFarm()
+
+    val farmers = farmerDao.getAllFarmers()
+
+    val farms = farmerDao.getAllFarms()
 
     suspend fun insertFarmerAndFarm(farmer: Farmer, farm: Farm){
         farmerDao.insertFarmerAndFarm(farmer, farm)
