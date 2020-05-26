@@ -11,6 +11,7 @@
         <item name="textInputStyle">@style/AppTheme.TextInputLayout</item>
         <item name="toolbarStyle">@style/AppTheme.Toolbar</item>
         <item name="materialButtonStyle">@style/AppTheme.Button</item>
+        <item name="materialCardViewStyle">@style/AppTheme.CardView</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
@@ -31,7 +32,20 @@
         <item name="textAppearanceCaption">@style/AppTheme.TextAppearance.Caption</item>
     </style>
 
+    <style name="AppTheme.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+        <item name="cardCornerRadius">@dimen/dimen_8dp</item>
+        <item name="elevation">@dimen/dimen_8dp</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppTheme.ShapeAppearance.MediumComponent</item>
+    </style>
+
     <style name="AppTheme.TextAppearance.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/rubik</item>
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/rubik</item>
         <item name="android:fontFamily">@font/rubik</item>
         <item name="android:textColor">@color/colorAccent</item>
@@ -57,5 +71,10 @@
     <style name="AppTheme.ShapeAppearance.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="AppTheme.ShapeAppearance.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
     </style>
 </resources>
