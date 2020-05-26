@@ -1,13 +1,27 @@
 package com.octacore.agromallfarms.ui.dashboard
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.octacore.agromallfarms.Repository
+import com.octacore.agromallfarms.data.FarmersDatabase
+import com.octacore.agromallfarms.model.Farmer
 
-class DashboardViewModel : ViewModel() {
+class DashboardViewModel(app: Application) : AndroidViewModel(app) {
+    private val repo: Repository
+    val farmers: LiveData<List<Farmer>>
 
-    private val _text = MutableLiveData<String>().apply {
+    init {
+        val farmerDao = FarmersDatabase.getDatabase(app).farmerDao()
+        repo = Repository(farmerDao)
+        farmers = repo.farmers
+    }
+
+    /*private val _text = MutableLiveData<String>().apply {
         value = "This is Dashboard Fragment"
     }
-    val text: LiveData<String> = _text
+    val text: LiveData<String> = _text*/
+
 }
