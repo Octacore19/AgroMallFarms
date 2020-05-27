@@ -22,7 +22,6 @@
     <string name="farm_details">Farm Details</string>
     <string name="farm_name">Farm Name</string>
     <string name="location">Location</string>
-    <string name="maps_api_key" />
     <string name="longitude">Longitude</string>
     <string name="latitude">Latitude</string>
     <string name="register">Register</string>
@@ -30,7 +29,4 @@
     <string name="total_number_of_farmers">Total Number of Farmers</string>
     <string name="total_number_of_farms">Total Number of Farms</string>
     <string name="required">Required</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
