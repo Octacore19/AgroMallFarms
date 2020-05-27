@@ -26,7 +26,7 @@ abstract class FarmersDatabase : RoomDatabase() {
                     context.applicationContext,
                     FarmersDatabase::class.java,
                     "farmers-db"
-                ).build()
+                ).allowMainThreadQueries().build()
                 INSTANCE = instance
                 return instance
             }

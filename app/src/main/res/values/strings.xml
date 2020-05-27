@@ -29,4 +29,5 @@
     <string name="menu_map">Map</string>
     <string name="total_number_of_farmers">Total Number of Farmers</string>
     <string name="total_number_of_farms">Total Number of Farms</string>
+    <string name="required">Required</string>
 </resources>

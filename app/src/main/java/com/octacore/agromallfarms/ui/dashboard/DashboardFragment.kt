@@ -38,7 +38,7 @@ class DashboardFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        dashboardViewModel.farmersAndFarm.observe(this, Observer { farmersAndFarm ->
+        dashboardViewModel.farmers.observe(this, Observer { farmersAndFarm ->
             adapter.loadFarmersAndFarm(farmersAndFarm)
         })
 
