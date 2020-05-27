@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AgroMall Farms</string>
+    <string name="app_name">Agro Mall Farms</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -10,6 +10,8 @@
     <string name="menu_dashboard">Dashboard</string>
     <string name="menu_register">Register Farmer</string>
     <string name="menu_logout">@string/action_logout</string>
+    <string name="menu_splashscreen">Splashscreen</string>
+    <string name="menu_login">Login</string>
 
     <string name="home_second">Home Second</string>
     <string name="first_name">First Name</string>
@@ -29,4 +31,11 @@
     <string name="total_number_of_farmers">Total Number of Farmers</string>
     <string name="total_number_of_farms">Total Number of Farms</string>
     <string name="required">Required</string>
+    <string name="we_keep_in_touch">...we keep in touch</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+
+    <string name="login_email">test@theagromall.com</string>
+    <string name="login_password">password</string>
+    <string name="click_to_take_a_picture">Click to take a picture</string>
 </resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/nav_splashscreen">
+
+    <fragment
+        android:id="@+id/nav_splashscreen"
+        android:name="com.octacore.agromallfarms.ui.splashscreen.SplashScreenFragment"
+        android:label="@string/menu_splashscreen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_nav_splashscreen_to_loginFragment"
+            app:destination="@id/nav_login"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.octacore.agromallfarms.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>

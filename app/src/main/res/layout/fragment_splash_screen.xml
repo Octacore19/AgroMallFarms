@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/constellation_background"
+    tools:context=".ui.splashscreen.SplashScreenFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dimen_64dp"
+        android:layout_marginTop="@dimen/dimen_64dp"
+        android:layout_marginEnd="@dimen/dimen_64dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/farmers"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="@dimen/dimen_64dp"
+        android:layout_marginBottom="@dimen/dimen_150dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/we_keep_in_touch"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/AppTheme.TextAppearance.Headline6"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.octacore.agromallfarms.ui
+package com.octacore.agromallfarms.ui.map
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

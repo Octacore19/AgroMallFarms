@@ -1,10 +1,9 @@
-package com.octacore.agromallfarms.ui
+package com.octacore.agromallfarms.ui.map
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.app.NavUtils
 import androidx.lifecycle.Observer
@@ -15,7 +14,6 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
 import com.octacore.agromallfarms.R
-import com.octacore.agromallfarms.model.Farm
 
 class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -69,21 +67,29 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         private const val POLYGON_STROKE_WIDTH_PX = 8
         private const val PATTERN_DASH_LENGTH_PX = 20
         private val DASH: PatternItem = Dash(PATTERN_DASH_LENGTH_PX.toFloat())
-        private val PATTERN_POLYGON_ALPHA = listOf(GAP, DASH)
+        private val PATTERN_POLYGON_ALPHA = listOf(
+            GAP,
+            DASH
+        )
     }
 
     private fun stylePolygon(polygon: Polygon) {
         // Get the data object stored with the polygon.
         val type = polygon.tag?.toString() ?: ""
         var pattern: List<PatternItem>? = null
-        var strokeColor = COLOR_BLACK_ARGB
-        var fillColor = COLOR_WHITE_ARGB
+        var strokeColor =
+            COLOR_BLACK_ARGB
+        var fillColor =
+            COLOR_WHITE_ARGB
         when (type) {
             "alpha" -> {
                 // Apply a stroke pattern to render a dashed line, and define colors.
-                pattern = PATTERN_POLYGON_ALPHA
-                strokeColor = COLOR_GREEN_ARGB
-                fillColor = COLOR_PURPLE_ARGB
+                pattern =
+                    PATTERN_POLYGON_ALPHA
+                strokeColor =
+                    COLOR_GREEN_ARGB
+                fillColor =
+                    COLOR_PURPLE_ARGB
             }
         }
         polygon.strokePattern = pattern

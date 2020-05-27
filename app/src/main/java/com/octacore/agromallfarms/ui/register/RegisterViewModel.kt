@@ -19,6 +19,7 @@ class RegisterViewModel(app: Application) : AndroidViewModel(app) {
     var otherName = ""
     var phoneNumber = ""
     var email = ""
+    var profilePhoto = ""
     var birthday = ""
     var farmName = ""
     var farmLocation = ""

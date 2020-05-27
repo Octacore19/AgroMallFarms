@@ -25,6 +25,15 @@
             app:riv_corner_radius="50dp" />
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profilePhotoPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textAppearance="@style/AppTheme.TextAppearance.Headline6"
+            android:text="@string/click_to_take_a_picture" />
+
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_48dp"
@@ -37,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_8dp"
             android:hint="@string/first_name"
-            app:startIconDrawable="@drawable/ic_face_black_24dp">
+            app:startIconDrawable="@drawable/ic_face">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/firstNameEditText"
@@ -53,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_16dp"
             android:hint="@string/last_name"
-            app:startIconDrawable="@drawable/ic_face_black_24dp">
+            app:startIconDrawable="@drawable/ic_face">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/lastNameEditText"
@@ -69,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_16dp"
             android:hint="@string/other_name"
-            app:startIconDrawable="@drawable/ic_face_black_24dp">
+            app:startIconDrawable="@drawable/ic_face">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/otherNameEditText"
@@ -85,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_16dp"
             android:hint="@string/email"
-            app:startIconDrawable="@drawable/ic_email_black_24dp">
+            app:startIconDrawable="@drawable/ic_email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailEditText"
@@ -101,7 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_16dp"
             android:hint="@string/phoneNumber"
-            app:startIconDrawable="@drawable/ic_phone_black_24dp">
+            app:startIconDrawable="@drawable/ic_phone">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/phoneNumberEditText"
@@ -118,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_16dp"
             android:hint="@string/birthday"
-            app:startIconDrawable="@drawable/ic_event_black_24dp">
+            app:startIconDrawable="@drawable/ic_event">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/birthdayEditText"
@@ -141,7 +150,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_8dp"
             android:hint="@string/farm_name"
-            app:startIconDrawable="@drawable/ic_event_note_black_24dp">
+            app:startIconDrawable="@drawable/ic_event_note">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/farmNameEditText"
@@ -158,7 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_16dp"
             android:hint="@string/location"
-            app:startIconDrawable="@drawable/ic_location_on_black_24dp">
+            app:startIconDrawable="@drawable/ic_location">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/farmLocationEditText"
@@ -181,7 +190,7 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="@dimen/dimen_8dp"
                 android:hint="@string/latitude"
-                app:startIconDrawable="@drawable/ic_location_on_black_24dp">
+                app:startIconDrawable="@drawable/ic_location">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/latitudeEditText"
@@ -198,7 +207,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="@dimen/dimen_8dp"
                 android:hint="@string/longitude"
-                app:startIconDrawable="@drawable/ic_location_on_black_24dp">
+                app:startIconDrawable="@drawable/ic_location">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/longitudeEditText"
