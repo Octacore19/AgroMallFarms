@@ -30,4 +30,7 @@
     <string name="total_number_of_farmers">Total Number of Farmers</string>
     <string name="total_number_of_farms">Total Number of Farms</string>
     <string name="required">Required</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
