@@ -4,7 +4,7 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import android.util.Base64
-import com.makeramen.roundedimageview.RoundedImageView
+import android.widget.ImageView
 import java.io.ByteArrayOutputStream
 import java.util.regex.Matcher
 import java.util.regex.Pattern
@@ -27,7 +27,7 @@ object Utils {
         return matcher.matches()
     }
 
-    fun getEncodedImage(imageView: RoundedImageView, data: Intent) : String{
+    fun getEncodedImage(imageView: ImageView, data: Intent) : String{
         val imageBitmap = data.extras?.get("data") as Bitmap
         imageView.setImageBitmap(imageBitmap)
         val drawable = imageView.drawable

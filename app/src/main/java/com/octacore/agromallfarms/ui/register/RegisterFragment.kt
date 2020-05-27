@@ -14,6 +14,7 @@ import android.util.Base64
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -55,7 +56,7 @@ class RegisterFragment : Fragment() {
     private lateinit var latitudeLayout: TextInputLayout
     private lateinit var registerButton: MaterialButton
     private lateinit var profilePhotoPrompt: MaterialTextView
-    private lateinit var farmerProfilePhoto: RoundedImageView
+    private lateinit var farmerProfilePhoto: ImageView
     private lateinit var registerViewModel: RegisterViewModel
 
     override fun onCreateView(
@@ -87,6 +88,10 @@ class RegisterFragment : Fragment() {
                 clearAllErrors()
                 registerFarmer()
             }
+        }
+
+        farmerProfilePhoto.setOnClickListener {
+            captureImage()
         }
 
         profilePhotoPrompt.setOnClickListener {
