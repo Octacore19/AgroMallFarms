@@ -218,7 +218,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/registerButton"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_48dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_32dp"
             android:layout_marginBottom="@dimen/dimen_48dp"
             android:text="@string/register" />

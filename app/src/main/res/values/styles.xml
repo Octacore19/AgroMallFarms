@@ -70,6 +70,7 @@
 
     <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textAppearance">@style/AppTheme.TextAppearance.Headline6</item>
+        <item name="android:padding">@dimen/dimen_16dp</item>
         <item name="shapeAppearance">@style/AppTheme.ShapeAppearance.SmallComponent</item>
     </style>
 

@@ -62,13 +62,13 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_48dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_32dp"
         android:layout_marginEnd="@dimen/dimen_32dp"
         android:layout_marginBottom="@dimen/dimen_48dp"
+        android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/login" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
